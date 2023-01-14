@@ -11,55 +11,21 @@
   </head>
   <body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button" style="margin-bottom: 20px">Boom?</button>
+      <!-- <div class="emoji mb-6">💣🤯💥</div>
+      <button class="button" style="margin-bottom: 20px">Boom?</button> -->
 
-      <form action="send-to-server" method="get" class="form-example">
+      <form action="">
         <label for="name">Enter your name: </label>
-        <input
-          type="text"
-          name="ccname"
-          id="ccname"
-          inputmode="latin-name"
-          placeholder="John More Doe"
-          autocomplete="cc-name"
-          required
-        />
+        <input type="text" name="ccname" autocomplete="cc-name" />
 
         <label for="card-number">Enter your card number: </label>
-        <input
-          type="number"
-          name="cardnumber"
-          id="cardnumber"
-          inputmode="numeric"
-          pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-          placeholder="1111-2222-3333-4444"
-          autocomplete="cc-number"
-          required
-        />
+        <input type="number" name="cardnumber" autocomplete="cc-number" />
 
         <label for="cvc">Enter your card cvc: </label>
-        <input
-          type="number"
-          name="cvc"
-          id="cvc"
-          placeholder="123"
-          inputmode="numeric"
-          pattern="[0-9]{3}"
-          autocomplete="cc-csc"
-          required
-        />
+        <input type="number" name="cvc" autocomplete="cc-csc" />
 
         <label for="expiration">Enter your card expiration date: </label>
-        <input
-          type="number"
-          name="cc-exp"
-          id="cc-exp"
-          inputmode="numeric"
-          placeholder="May 2222"
-          autocomplete="cc-exp"
-          required
-        />
+        <input type="number" name="cc-exp" autocomplete="cc-exp" />
 
         <input type="submit" value="Subscribe!" />
       </form>
