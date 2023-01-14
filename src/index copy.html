@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML, CSS and SASS Boilerplate</title>
+    <meta
+      name="description"
+      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="emoji mb-6">💣🤯💥</div>
+      <button class="button" style="margin-bottom: 20px">Boom?</button>
+
+      <form action="send-to-server" method="get" class="form-example">
+        <div class="form-example">
+          <label for="name">Enter your name: </label>
+          <input
+            type="text"
+            name="ccname"
+            id="ccname"
+            inputmode="latin-name"
+            placeholder="John More Doe"
+            autocomplete="cc-name"
+            required
+          />
+        </div>
+        <div class="form-example">
+          <label for="card-number">Enter your card number: </label>
+          <input
+            type="number"
+            name="cardnumber"
+            id="cardnumber"
+            inputmode="numeric"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            placeholder="1111-2222-3333-4444"
+            autocomplete="cc-number"
+            required
+          />
+        </div>
+        <div class="form-example">
+          <label for="cvc">Enter your card cvc: </label>
+          <input
+            type="number"
+            name="cvc"
+            id="cvc"
+            placeholder="123"
+            inputmode="numeric"
+            pattern="[0-9]{3}"
+            autocomplete="cc-csc"
+            required
+          />
+        </div>
+        <div class="form-example">
+          <label for="expiration">Enter your card expiration date: </label>
+          <input
+            type="month"
+            name="cc-exp"
+            id="cc-exp"
+            inputmode="numeric"
+            placeholder="May 2222"
+            autocomplete="cc-exp"
+            required
+          />
+        </div>
+
+        <div class="form-example">
+          <input type="submit" value="Subscribe!" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
