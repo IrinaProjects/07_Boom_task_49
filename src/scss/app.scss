@@ -25,5 +25,29 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 10rem;
+  font-size: 16px;
   flex-flow: column;
+}
+
+h6 {
+  font-size: 0.4em;
+}
+h5 {
+  font-size: 0.8em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h3 {
+  font-size: 2.6em;
+}
+h2 {
+  font-size: 3em;
+}
+h1 {
+  font-size: 3.5em;
+}
+
+.form-example {
+  margin-bottom: 10px;
 }
